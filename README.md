@@ -12,7 +12,8 @@ Why LLM can't build real agi and how we make it ?--
 We've know that actually Human language lacks the ability to represent more details of the real world, besides ,although most LLM be trained through Multi-mode skill nowadays ,but still,it more like to translate the language message to other modes.That's to say,the base of LLM's message still based on Human language.So if we really wanna create the real AGI,and not only create it as a Language expert,we must train it based on more messages that can more represent the real world.Actually,we can display all kinds of message in visual mode.First,most of the world's message exit in visual style,and no matter words,voice or vibrate...we can all transpose them in visual mode.
 Of course,there's another problem,in most exited models,we've use Embedding skill to construct the vector space that record the links between different units,this make that when we input some tokens into it,the model can quickly activate the area that got links with the inputs.But as a more kinds of complicated message,and we expect the model can continually growing,so we can't build some kinds of message space like Embedding.Now,we need new structures.And if possible,we don't like it load the whole world model and parameters when we run it.As it happens,it'll reduce more cost.And based on it,Robots can real get the possibility that cost less than Human.
 
-![IMG20250620203627](https://github.com/user-attachments/assets/6d01dc9b-2467-4169-a00b-a25aea21479e)
+![IMG202506202036271](https://github.com/user-attachments/assets/4cd4fccd-e9f0-49a1-ab1f-3d820034ad9a)
+
 
 We need new structure--
 
