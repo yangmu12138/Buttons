@@ -20,6 +20,16 @@ We need new structure--
 Spiking neuron Network? I've explore it for a long time,include MIT's Liquid Time-constant Network.Most people try to use it edge out Transformer or other rnn Model, just because it seems that these units maybe can make Constant-Learning case comes true.But there's a pity that the ability of it about growing didn't last too long,or maybe we can say the sensory density of these units is limited.
 But think about another case ,how about just make it as a activator?Train it base on visual message,let all visual tokens flowing through these units before trained by other Rnn's like models.And here i need to supplement that we can also let the visualed Language message flowing through it,it'll make it easier to be activated while we apply the model.In this process,these activators will be trained sensitive enough for the related message.Imagine we got massive units,then we put them in one big box.When we run the box,no matter the inputs in visual mode or just other visualed kinds of message,the related activator will be activated,and then,the linked model and its trained parameters will be loaded,this helps the massage space be built.
 
+![IMG202506202036502](https://github.com/user-attachments/assets/af35d388-ff10-4405-84a5-16897e7cfda6)
+
+
 How to store the trained model and parameters--
+
+The first idea comes to my mind is that whether the model(responsible for training)and parameters should be linked with others while be saved,but finally i find maybe there's another greater solution.We can take more notice on how to link these units(what we call them box before),and for these model and parameters,we just need to record the model's structure and parameter's address in units,when the units are activated,then just load them in memory.
+
+How these units linked? --
+
+
+
 
 
