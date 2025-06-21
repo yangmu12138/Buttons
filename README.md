@@ -32,11 +32,19 @@ How these units linked? --
 Well,there's surely a point annoys me for a pretty long time,that it, how we could link these units(include activator,Rnn model,parameters)as a big status space,and then use a super unit be trained over these small units.Like a Chain-mechanism ,if the Super unit can link several small units,it means that the Super unit can now represent a combined status space.We should notice that only basic units need the whole structure include activator,Rnn model(maybe other new kinds of model),and parameters.The super unit only got a necessary element--Activator.
 Must admit that,in these status space,Language still play a essential role because while compared with other kinds of message,Language obvious hold a  stronger logistic ability.But here still,its ability is limited,we can't really expect that just use Language to construct all kinds of status space. Super units still needed,and all these kinds of units that trained base on diffrent modes of message will finally construct the final status space.
 
+![IMG202506202037243](https://github.com/user-attachments/assets/7cc730f8-b840-4d34-9636-35cd32fd8ee0)
+
+
 If it can't be done.--
 
 If finally it can't be done,as to say we can't link these basic units with a super unit,then it maybe more be used in some special area,like move the Robots,and its Logistic decision will depend on exited LLM.
 Later(maybe one week,if i still alive) i'll show some codes more related with Robot's arm.Just put some basic units in one box ,of course,these units include the ones which in charge of dealing with basic actions,like,avoid hitting,escape the dangerous area,this more like Human's conditional reflex.These essential basic units maybe should be always activated,of course,once we found the solution to combine these basic status space with a super unit ,then we just need to activate the super unit.
 I do hope that i can quickly find the method,or maybe some other guys can make it more perfect.If it can be done,we'll make growth comes true.The big model will'be grow smarter and smarter,and we don't need to retrain it once and once again.Besides,when we apply the big model,it don't need much memory resource,when we input some tokens,only the linked units will'be activated,hence,the model will really reduce much costs.And another amusing point is that,consider the partial activated property,the model also got the potential to manage different problems simultaneously .
+
+Some supplement.--
+
+For the case of updating unit's parameters,actually there's no difference with exited models.If message space don't change too much,then we just need Fine-tuning it,but once the change magnitude beyond the threshold,maybe we just need to retrain it.So that except saving model's structure and related parameters,it seems that we also need to record these data's address in our basic units.
+Besides,maybe we can just train some kinds of Activators to work for some specific tasks,like,extracting specific visual message,or be trained more sensitive with moving objects.These Activators maybe can also helps us comprehending more details about our brain,and if we really got this far,i do believe that we've got the real AGI.
 
 
 
