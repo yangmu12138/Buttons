@@ -1,4 +1,8 @@
 # Buttons
+<img width="644" height="321" alt="屏幕截图 2026-02-15 101812" src="https://github.com/user-attachments/assets/1bf41331-554c-4fc1-9ddf-1ac9bb1cc5f0" />
+
+
+
 It is noteworthy that,How much the LLM can attend to the Status that aggregate sufficient information. As the description of the real world,Human Language more like a brief instruction. Although in some degree,Human Language loaded the Logic ability from Human Society,But no matter the amount of the Information about Logic or Itself,still can't  make the LLM know more clear about the real world and based on it to control the Robots. About Logic,i more wish to describe it as a process that use a series of Status to enwrap the problems and finally to rule out these uncertain elements,and this actually can be devided into 2 types. First,the ability to link different Status in order to cover the problem in special space. Second,while the linked Status can't solve the problem,it should automatically  expand the space and link more new Status to cover the problem.
 <img width="395" height="280" alt="屏幕截图 2026-02-14 101201" src="https://github.com/user-attachments/assets/4728bdc1-bc8f-4389-9348-ab2b56a26fc8" />
 <img width="700" height="405" alt="屏幕截图 2026-02-14 101646" src="https://github.com/user-attachments/assets/dd6f04c8-56ba-4de7-94a2-c5ce043b6889" />
