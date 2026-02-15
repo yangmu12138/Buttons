@@ -1,6 +1,6 @@
-# Buttons
+# Buttons--To make Robots got real sense
 <img width="644" height="321" alt="屏幕截图 2026-02-15 101812" src="https://github.com/user-attachments/assets/1bf41331-554c-4fc1-9ddf-1ac9bb1cc5f0" />
-
+Buttons is a tool to help Robots understand the real world,it don't much rely on LLM ,but directly try to learn everything through Visual Status.
 
 
 It is noteworthy that,How much the LLM can attend to the Status that aggregate sufficient information. As the description of the real world,Human Language more like a brief instruction. Although in some degree,Human Language loaded the Logic ability from Human Society,But no matter the amount of the Information about Logic or Itself,still can't  make the LLM know more clear about the real world and based on it to control the Robots. About Logic,i more wish to describe it as a process that use a series of Status to enwrap the problems and finally to rule out these uncertain elements,and this actually can be devided into 2 types. First,the ability to link different Status in order to cover the problem in special space. Second,while the linked Status can't solve the problem,it should automatically  expand the space and link more new Status to cover the problem.
@@ -20,15 +20,7 @@ From the whole process about recovering the picture,we need two kinds of VAE Mod
 Of course,right here there's exit several points need us to pay more attention,first, about the degree that the images should be rebuild to,it need a balance. On the one hand,it need relatively vague,and this can guarantee that when the Model load it ,it won't be seemed as a new Status.  Because visual information really update too quick,so what we need is try to find a Status that relatively vague so as to stand for more similar events. On the other hand,for everytime while we concentrate or rebuild the images,there's must missing some part of information,thus there must exit some limits through these loops. Once the rebuilt information can't reach the point that we need,that also means the process about concentrating Status got the limits. Of course, although in this process all kinds of status all be changed as visual information,but still there's exit big difference when we try to concentrate different kinds of Status. For instance,the limits that when we concentrate Words maybe grossly larger than concentrating ordinary scenery.
 
 
-一个值得关注的点是，大语言模型在多大程度上能关注到那些聚合了足够多信息的状态。作为对真实世界状态的描述，人类语言更像是一份简单的说明书。尽管在一定程度上语言承载了很大一部分人类世界进阶出的逻辑能力，但不管是围绕这部分逻辑的信息量亦或是逻辑本身，仍然不足以让以此为根基的大模型足够了解真实世界的本质并熟练地操纵机器人。有关逻辑，我更愿将其描述为利用一系列状态包裹问题从而使得问题空间不确定性被排除的过程，而这实际上大抵可以划分为两类。一，在一定空间内连接不同状态覆盖需要被解决问题的能力；另一种则是在某一空间内当连接起来的状态无法覆盖需要被解决的问题时，主动拓展空间链接新状态用以实现对问题的覆盖。
 
-除去视觉信息或者波（当然了我们所看到的一切本质上也是电磁波），我想很难找到其它的能够承载足够多真实世界信息的方式。如果在未来我们能够重构计算机的结构，那么或许波能够作为更棒的信息载体，但就目前而言，一个以视觉信息为根基的大模型或许才是实现AGI的基础。实际上，无论是文字、声音、或者不同力的作用过程，本质上都可以通过视觉形式呈现。对于同一件事发生的过程，我们通常可以用几种不同的状态去描述它，所以这些状态之间是相互平行的。而在大模型利用这些状态了解世界的过程中，不同类型状态之间的互补能让大模型更大程度上提升所容纳信息的阈值。
-
-视觉信息的另一个典型特点是，本质上我们可以让无数帧图片，（也就是一段视频）与一张图片拥有相同的尺度，所以相比于其它类型的信息，视觉信息拥有着天然的优势。当然如果真的想尽可能大地放大这个优势，我们需要新的模型架构，使其能够在捕捉不同状态相互之间关系的过程中记录不同状态在空间中的相对位置，正如Embedding在对文字信息编码时所做的。试想我们拥有几张图片，那么通过训练，利用类似VAE的架构，我们可以将这几张图片集成在一张图片上，而此时，如果这张被集成的图片能够在一定程度上还原为原本的几张图片，那么这张被集成的图片就可以被认为近似等同于一种包含了一系列图片信息的新状态。同理，如果此时我们需要一段描述这几张图片的文字，实际上我们只需要一张包含了这段文字的图片。这张图片将由包含着句子的下一级图片训练得到，而如果一级级还原下去，最终将得到仅包含一个字符的图片。
-
-在整个图片还原的过程中，我们需要两种不同的类型的VAE模型，一种负责将图片信息集成或近似还原，由于整个过程势必无法摆脱部分信息的丢失，因此它只能近似还原或集成相应的状态。另一种类型，则是更注重图片还原的细节，它负责将低信息浓度的图片还原的更具体甚至加深其细节信息，这样在物体识别、定位的过程中才能更好地发挥作用。试想存在一个身处陌生环境的机器人，由于它每一次移动、抓握本质上对应的都是一组不同的状态，而驱动其做出动作的指令则是与这些视觉信息平行的状态，因此在其避障或劳动的过程中，第一种模型将根据不同状态之间的关系，最终寻找出最优的状态链接的方式，从而实现对问题的解决。而由于机器人具体动作的执行需要指令信息，因此当每一种状态被链接起来的过程中，与这些视觉信息平行的指令信息将被最终还原为单一的基础指令，从而实现对电机的操控。
-
-当然这里仍然存在几个值得关注的点，首先是图片信息的集成或还原度，这需要达到一个平衡。一方面它需要相对地模糊，这样才不至于在学习的过程中，因为某个细节的变动而被判定为新的状态。由于视觉信息太过丰富且新信息生成的速度太快，因此我们只能尽可能地用一种相对模糊的状态代表更多相似的事件。另一方面，由于每次集成或还原都意味着部分信息的丢失，因此这种状态集成的循环是存在极限的。一旦最底层信息的还原效果达不到处理具体问题的要求，那么也就意味着状态的集成已经到达了极限。当然，尽管在这个过程中所有种类的状态都被转化为了视觉信息，但不同种状态集成的效果可能存在很大的差异，譬如，很可能文字图片集成的极限会远远大于普通的自然景观图片。
 
 
 
