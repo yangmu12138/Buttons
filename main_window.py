@@ -1,7 +1,9 @@
 import tkinter as tk
 from tkinter import messagebox
+import auto_or_steer_window
 from settings_window import settings_main
 from warning_window import warning_setting_start
+from auto_or_steer_window import auto_or_steer_settings
 
 class Buttons_model:
     def __init__(self, root):
@@ -47,8 +49,7 @@ class RoundButtonApp:
         )
         
         # 绑定大按钮点击事件
-        self.big_button_canvas.tag_bind(self.big_button, "<Button-1>",self.on_big_button_click)
-        self.big_button_canvas.bind("<Button-1>", self.on_big_button_click)
+        self.big_button_canvas.bind("<Button-1>", lambda e: auto_or_steer_settings())
         
         # 底部小按钮容器
         self.buttons_frame = tk.Frame(self.root, bg="#f0f0f0")
@@ -122,7 +123,7 @@ class RoundButtonApp:
         messagebox.showinfo("提示", "你点击了按钮1！")
     
     def on_small_button2_click(self,event):
-        messagebox.showinfo("提示", "你点击了按钮2！")
+        messagebox.showinfo("info", "it not be implemented")
     
     def on_small_button3_click(self,event):
         messagebox.showinfo("提示", "你点击了按钮3！")
